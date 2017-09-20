@@ -1,0 +1,25 @@
+<html>
+<body>
+{% load static %}
+
+<h1>Welcome to HomePage</h1>
+<h3 align="right">Welcome {{ request.session.usernm }}</h3>
+
+<hr>
+<table width=100%>
+<tr>
+<td><a href=''>Home</a>
+<td><a href='courses/'>Courses</a>
+<td><a href='event/'>Events</a>
+<td><a href='about/'>About us</a>
+<td><a href='contact/'>Contact Us</a>
+<td><a href='insert/'>insert</a>
+<td><a href='/delete/'>delete</a>
+<td><a href='/login/'>login</a>
+<td><a href='/disp/'>dispcookie</a>
+</tr>
+</table>
+<img  src="{% static 'stud/hello.jpg' %}" width='200' height='300'>
+<img  src="{% static 'stud/logo.png' %}" width='200' height='300'>
+</body>
+</html>

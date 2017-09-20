@@ -1,0 +1,3 @@
+pip install pillow
+python manage.py makemigrations stud
+python manage.py migrate stud

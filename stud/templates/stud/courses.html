@@ -1,0 +1,13 @@
+<html>
+{%load static %}
+<h1>Welcome to courses file</h1>
+<table>
+{%for row in data %}
+<tr>
+	<th>{{ row.snm }}
+	<th>{{ row.pnm }}
+	
+</tr>
+{% endfor %}
+</table>
+</html>

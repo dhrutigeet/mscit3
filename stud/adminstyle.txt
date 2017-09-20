@@ -1,0 +1,28 @@
+Admin site in django
+---------------------------------------
+(rights to update)
+
+1)createsuperuser for your website
+
+	>python manage.py createsuperuser
+	username
+	email
+	password
+	confirmpassword
+
+
+2)then you can login into admin site
+3)include your models from models.py into your admin site
+	(admin.py)
+
+
+	from django.contrib import admin
+	from .models import mscit
+
+	
+	#register your models(application->admin.py)
+	admin.site.register(mscit)
+
+4)active your admin site
+	>python manage.py runserver
+	>127.0.0.1:8000/admin
